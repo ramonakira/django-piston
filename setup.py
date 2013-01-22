@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import os
 
 try:
     from setuptools import setup, find_packages
@@ -8,11 +9,11 @@ except ImportError:
     ez_setup.use_setuptools()
     from setuptools import setup, find_packages
     
-import os
+version = "0.2.3rc1"
 
 setup(
     name = "django-piston",
-    version = "0.2.3rc1",
+    version = version,
     url = 'http://bitbucket.org/jespern/django-piston/wiki/Home',
 	download_url = 'http://bitbucket.org/jespern/django-piston/downloads/',
     license = 'BSD',
